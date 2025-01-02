@@ -1,0 +1,199 @@
+/* Import modern-normalize to normalize browser inconsistencies */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css");
+
+* {
+  border: 0.5px solid;
+}
+
+/* Global Reset */
+:root {
+  line-height: 1.5; /* More readable line height */
+  box-sizing: border-box; /* Avoids layout issues with padding */
+}
+
+/* Inherit box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0; /* Resets default margins */
+  padding: 0; /* Resets default paddings */
+}
+
+/* Remove bullet points on lists used for nav, etc. */
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/* Reset default font sizing for headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Images fill their containers */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic reset for form inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Body takes full width and height of viewport */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* In articles, use default browser heading styles for readability */
+.article :where(h1, h2, h3, h4, h5) {
+  all: revert;
+}
+
+/* Add extra reset as needed below */
+
+.noto-sans-style {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.slanted-background {
+  min-height: 600px;
+  width: 400%;
+  position: absolute;
+  transform-origin: center;
+
+  background-color: #467fad;
+  /* transform: translate(-50%, -100px) rotate(-35deg); */
+  transform: translate(-50%, -50%) rotate(-35deg);
+}
+
+div[style="padding: 10%; position: relative"] {
+  overflow: hidden;
+  height: 60%;
+}
+
+.image-top {
+  position: absolute;
+  inset: 0 10%;
+  width: 80%;
+}
+
+h1 {
+  position: absolute;
+  bottom: 20px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+  margin: 10px;
+}
+
+.about-me {
+  padding: 20px;
+}
+
+.about-me h3 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.my-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 280px;
+  background: white;
+  margin: 0 auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.icons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.footer {
+  height: fit-content;
+  background-color: #467fad;
+}
+
+.footer h3 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 10px;
+}
+
+.image-bottom {
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
