@@ -18,28 +18,38 @@
     />
   </head>
   <body>
-    <div style="padding: 10%; position: relative">
-      <div class="slanted-background"></div>
-      <picture class="image-top">
-        <source media="(max-width: 600px)" srcset="./image-top.jpg" />
-        <img
-          src="./image-top-cropped.jpg"
-          alt="image of a man who's website this is for"
-        />
-      </picture>
-      <h1>Roy Strong</h1>
+    <div class="slanted-background"></div>
+
+    <div class="grid-container">
+      <div class="image-top-overlap-container">
+        <picture class="image-top">
+          <source media="(max-width: 600px)" srcset="./image-top.jpg" />
+          <img
+            src="./image-top-cropped.jpg"
+            alt="image of a man who's website this is for"
+          />
+        </picture>
+        <h1>Roy Strong</h1>
+      </div>
+
+      <div class="about-me">
+        <h3>About Me</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
+          hic ducimus praesentium tempore facere animi rem iste reiciendis autem
+          fugiat, fuga, tempora nobis dolores dicta voluptatem architecto maxime
+          itaque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque quae, molestiae suscipit rerum, quisquam adipisci hic a eum
+          quasi distinctio ipsam consequatur veritatis alias soluta expedita?
+          Quibusdam dolorem vero magni. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Molestias, quae dolor expedita at fugiat neque
+          cupiditate cumque doloribus possimus eveniet veniam in, ullam hic
+          itaque? Sequi laudantium minima nihil ipsa.
+        </p>
+      </div>
     </div>
 
-    <div class="about-me">
-      <h3>About Me</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, hic
-        ducimus praesentium tempore facere animi rem iste reiciendis autem
-        fugiat, fuga, tempora nobis dolores dicta voluptatem architecto maxime
-        itaque vitae.
-      </p>
-    </div>
-
+    <h2>My Work</h2>
     <div class="my-work-grid">
       <div class="card">
         <img src="pepe.jpg" alt="Project screenshot" />
@@ -253,15 +263,20 @@
     </div>
 
     <div class="footer">
-      <h3>About Me</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, hic
-        ducimus praesentium tempore facere animi rem iste reiciendis autem
-        fugiat, fuga, tempora nobis dolores dicta voluptatem architecto maxime
-        itaque vitae.
-      </p>
-       <picture class="image-bottom">
-        <source media="(max-width: 1200px)" srcset="./image-bottom-cropped.jpg" />
+      <div>
+        <h3>Contact Me</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
+          hic ducimus praesentium tempore facere animi rem iste reiciendis autem
+          fugiat, fuga, tempora nobis dolores dicta voluptatem architecto maxime
+          itaque vitae.
+        </p>
+      </div>
+      <picture class="image-bottom">
+        <source
+          media="(max-width: 1020px)"
+          srcset="./image-bottom-cropped.jpg"
+        />
         <img
           src="./image-bottom.jpg"
           alt="image of a man who's website this is for"
